@@ -1,0 +1,127 @@
+{% extends "nav.html" %}
+{% block content %}
+{% load static %}
+      <!-- contact -->
+     <div class="contact">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <div class="titlepage text_align_left">
+                        <h2>Brain Stroke Prediction</h2>
+                     </div>
+                  </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" method="post" class="main_form" action="predict">
+                   {% csrf_token %}
+                     <div class="row">
+                       
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Gender" type="text" name="gender">                          
+                        </div>
+                        <div class="col-md-12">
+                            <input class="contactus" placeholder="Age" type="text" name="age">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Hypertension" type="text" name="hypertension">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Heart Disease" type="text" name="heart">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Ever Married" type="text" name="married">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Work Type" type="text" name="work">                          
+                         </div>
+                        
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Residence_type" type="text" name="residence">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Avg_Glucose" type="text" name="glucose">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="BMI" type="text" name="bmi">                          
+                         </div>
+                         <div class="col-md-12">
+                            <input class="contactus" placeholder="Smoking_Status" type="text" name="smoking">                          
+                         </div>
+                        
+                        
+                        <div class="col-md-12">
+                           <button class="send_btn">Predict Brain Stroke</button>
+                           
+                        </div>
+                     </div>
+                  </form>
+               </div>
+                
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Resources</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="index.html">Home</a><li>
+                                 <li><a href="javascript:void(0)">What we do</a><li>
+                                 <li> <a href="javascript:void(0)">Media</a><li>
+                                 <li> <a href="javascript:void(0)">Travel Advice</a><li>
+                                 <li><a href="javascript:void(0)">Protection</a><li>
+                                 <li><a href="javascript:void(0)">Care</a><li>
+                              </ul>
+                             
+           
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                             <h3>About</h3>
+                              <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+                           </div>
+                        </div>
+                     
+                
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Contact  Us</h3>
+                                <ul class="top_infomation">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           Making this the first true  
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                           Call : +01 1234567890
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                           <a href="Javascript:void(0)">Email : demo@gmail.com</a>
+                        </li>
+                     </ul>
+                            
+                           
+                     </div>
+                  </div>
+                     
+                    
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+{% endblock %}
